@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CafeListComponent } from './cafe-list/cafe-list.component';
+import {HttpClientTestingModule} from "@angular/common/http/testing";
 
 
 
@@ -12,7 +13,8 @@ import { CafeListComponent } from './cafe-list/cafe-list.component';
     CafeListComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    HttpClientTestingModule
   ]
 })
 export class CafeModule { }
